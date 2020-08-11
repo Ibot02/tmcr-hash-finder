@@ -1,0 +1,32 @@
+.possibilities {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+body > div > div {
+	border: 2px solid black;
+	display: flex;
+	flex-flow: row wrap;
+	margin: 2px;
+}
+
+.possibilities > * {
+	margin: 5px;
+	padding: 2px;
+	border: 1px solid black;
+}
+
+.possibilities > * > label {
+	margin-right: 2px;
+}
+
+summary {
+	display: flex;
+	margin-right: 1em;
+}
+.hash {
+	font-family: monospace;
+}
+.hash-icons > div {
+	display: inline-block;
+}
