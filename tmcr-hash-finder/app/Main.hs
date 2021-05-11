@@ -65,7 +65,7 @@ data SelectableSetting = SettingFlag String | SettingDropdown [String] | Setting
 
 defaultLogicSettings :: [(SelectableSetting, Set Int)]
 defaultLogicSettings = [
-      flag "Keysanity"
+      dropdown ["Standard Keys", "Keysanity", "Keasy"]
     , flag "Shuffle elements into item pool"
     , flag' "Disable glitches" (Set.singleton 1)
     , flag "Obscure spots"
@@ -75,6 +75,9 @@ defaultLogicSettings = [
     , flag "Die in one hit if the timer runs out"
     , flag "Randomize Music"
     , flag' "Shuffle figurines into item pool" (Set.singleton 0)
+    , flag "Start with the Firerod"
+    , flag "Require all dungeons for ped"
+    , dropdown ["Normal item pool", "Reduced item pool", "Plentiful item pool"]
     , dropdown ["No normal fusions", "Open fusion mode", "Vanilla Fusions"]
     , dropdown ["Allow fusion skips", "Instant fusion skips", "No fusion skips"]
     , dropdown ["Ped Open/Regular DHC", "Ped Finish/No DHC", "Open DHC", "Open DHC + Ped Items"]
